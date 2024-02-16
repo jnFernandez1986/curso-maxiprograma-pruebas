@@ -25,5 +25,13 @@ namespace Ejemplo2
             MessageBox.Show("Ha elegido desde : " + fecha2.ToString("dd/MM/yyyy") +
                 " hasta " + fecha3.ToString("dd/MM/yyyy") + " para sus vacaciones");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cmbOpciones.Items.Add("Soltero");
+            cmbOpciones.Items.Add("Divorciado");
+            cmbOpciones.Items.Add("Casado");
+            cmbOpciones.Items.Add("Viudo");
+        }
     }
 }

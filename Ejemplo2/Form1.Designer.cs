@@ -32,6 +32,7 @@
             btnPrueba1 = new Button();
             btnPrueba2 = new Button();
             dtpFecha2 = new DateTimePicker();
+            cmbOpciones = new ComboBox();
             SuspendLayout();
             // 
             // calFecha
@@ -70,17 +71,27 @@
             dtpFecha2.Size = new Size(250, 27);
             dtpFecha2.TabIndex = 3;
             // 
+            // cmbOpciones
+            // 
+            cmbOpciones.FormattingEnabled = true;
+            cmbOpciones.Location = new Point(458, 299);
+            cmbOpciones.Name = "cmbOpciones";
+            cmbOpciones.Size = new Size(208, 28);
+            cmbOpciones.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cmbOpciones);
             Controls.Add(dtpFecha2);
             Controls.Add(btnPrueba2);
             Controls.Add(btnPrueba1);
             Controls.Add(calFecha);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
@@ -90,5 +101,6 @@
         private Button btnPrueba1;
         private Button btnPrueba2;
         private DateTimePicker dtpFecha2;
+        private ComboBox cmbOpciones;
     }
 }
